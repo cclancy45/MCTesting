@@ -1,0 +1,2992 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>0d67ced78712ad1028c0fcc6dabb3570</copied_from>
+        <copied_from_name>Mastercom - Transaction Search</copied_from_name>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>mastercom__transaction_search__copy_me</internal_name>
+        <label_cache>[{"name":"{{action.consumer_key}}","label":"action➛Consumer Key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"1b29f94e-f4c1-4002-a4c5-1ce6b39a986a"}},{"name":"{{action.signing_key}}","label":"action➛Signing Key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"cc925cbd-242b-4a95-896d-3343d2ac12b6"}},{"name":"{{action.keystore_password}}","label":"action➛Keystore Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d8a8783f-6b2a-4d6a-9019-9ac4b096db03"}},{"name":"{{action.uri}}","label":"action➛URI","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"9781a36d-516a-433e-b1d6-f0397f60c2b5"}},{"name":"{{action.merchant_descriptor}}","label":"action➛merchant_descriptor","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"80e82e66-dde2-4fb5-9a6d-58d8520a50e5"}},{"name":"{{action.match_type}}","label":"action➛match_type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"89981943-b456-4731-a0fe-cb7e9e83ae2f"}},{"name":"{{action.httpverb}}","label":"action➛httpVerb","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.casetype}}","label":"action➛caseType","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"f0a7fe30-6b07-4448-804a-b158a2609eda"}},{"name":"{{action.chargebackrefnum}}","label":"action➛chargebackRefNum","type":"action","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.customerfilingnumber}}","label":"action➛customerFilingNumber","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3af751fb-d819-46cf-9341-636ccfb23586"}},{"name":"{{action.disputeamount}}","label":"action➛disputeAmount","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"96b5fbcd-740a-4b42-936e-987d3dabf6af"}},{"name":"{{action.currencycode}}","label":"action➛currencyCode","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"8fc9461b-513f-46ce-8360-23751bd33aa2"}},{"name":"{{action.duedate}}","label":"action➛dueDate","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"80b53e98-9164-4023-aaa4-f1c58c52716b"}},{"name":"{{action.filedagainstica}}","label":"action➛filedAgainstIca","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3bbe234d-fed9-4cea-85f6-c003d5c5434d"}},{"name":"{{action.filingas}}","label":"action➛filingAs","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"8ef75c9c-d97a-4bda-8f40-aa2fffc3385d"}},{"name":"{{action.filingica}}","label":"action➛filingIca","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"f57ab556-ccb8-46b4-8a4c-122d2e044a57"}},{"name":"{{action.memo}}","label":"action➛memo","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3f63f530-cb35-42b5-807d-edfef2c72310"}},{"name":"{{action.messagetext}}","label":"action➛messageText","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"9c1204d9-a4e1-4869-8dda-1b0f397f295b"}},{"name":"{{action.changereasoncodeflag}}","label":"action➛changeReasonCodeFlag","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"f4c01e22-d7ac-48c8-b2f9-033f096e27a4"}},{"name":"{{action.updatedchargebackreasoncode}}","label":"action➛updatedChargebackReasonCode","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"aabad7d9-33ac-43ad-bd74-0cc2f972463b"}},{"name":"{{action.changereasoncodereason}}","label":"action➛changeReasonCodeReason","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"f1fd1a04-d2db-466c-9703-51578c1e947a"}},{"name":"{{action.primaryaccountnum}}","label":"action➛primaryAccountNum","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a52cac-d568-4542-be2f-5849d90d21fb"}},{"name":"{{action.acquirerrefnum}}","label":"action➛acquirerRefNum","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d810ba4c-bfe2-4e56-b201-aac691eeaa75"}},{"name":"{{action.chargebackreasoncode}}","label":"action➛chargebackReasonCode","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3fd26688-f27b-4930-ad58-ab74ceb83bf9"}},{"name":"{{action.merchantname}}","label":"action➛merchantName","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"cd5bcfc7-c766-4c2a-a468-5e4c736b79ab"}},{"name":"{{action.violationcode}}","label":"action➛violationCode","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"2ed080cc-8cfc-484b-9c24-0796f5590a84"}},{"name":"{{action.violationdate}}","label":"action➛violationDate","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"85b9f4f9-9b1b-492e-a9c4-9403f1cf0885"}},{"name":"{{action.chargebackdate}}","label":"action➛chargebackDate","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"9cb49e50-6db8-42aa-85d6-d787fad07742"}},{"name":"{{action.creditdate}}","label":"action➛creditDate","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"4ac95ab2-dc1a-4743-ac99-d73b1dfb4dd6"}},{"name":"{{action.http_verb}}","label":"action➛http_verb","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d143030a-3a91-4f1f-b8af-1ed8afebe1e2"}},{"name":"{{action.chargebackrefnum.chargebackrefnum_child0}}","label":"action➛chargebackRefNum➛chargebackRefNum_child0","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"5218e0e3-ce78-40fd-9a6c-8dd9e2bf3f8d"}},{"name":"{{action.acquirerrefnumber}}","label":"action➛acquirerRefNumber","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e95ad5f0-cc06-4a72-add6-9fef20a2bf23"}},{"name":"{{action.banknetrefnumber}}","label":"action➛bankNetRefNumber","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.transamountfrom}}","label":"action➛transAmountFrom","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1f1cb9a3-e99c-4751-b433-3e2fae62ebf4"}},{"name":"{{action.transamountto}}","label":"action➛transAmountTo","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"060a2b5b-cdef-42fe-8f0a-286b13421478"}},{"name":"{{action.transtartdate}}","label":"action➛tranStartDate","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"41c7eb90-ce86-499a-9de5-f5d3a676fc56"}},{"name":"{{action.tranenddate}}","label":"action➛tranEndDate","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0c80f187-bf33-497d-8d15-ba6dbb12e814"}},{"name":"{{step[fcdaa721-bce5-413c-962c-6a68e5fa5af3].payload}}","label":"step➛Build Header Payload➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1850e457-a6a7-4117-a432-d4b82e13b691].response_body}}","label":"step➛Generate Headers➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[6020df1d-74cf-4672-afcc-959a1f6a9d54].root.Authorization}}","label":"step➛JSON Parser step➛root➛Authorization","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f452ceba-7346-4753-b577-060f27544f32].headers}}","label":"step➛Parse Header Payload➛headers","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[10edab5f-ce85-4345-a049-2825c481db41].payload}}","label":"step➛Payload Body step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d02dc1c5-4a99-4310-a2ce-3952b1672a01].payload}}","label":"step➛Build Header➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5abd8376-2fc1-4bc2-b8f9-c2fa37debbc1].scriptbodypayload}}","label":"step➛Script step➛scriptBodyPayload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e2955b1f-16b5-4925-918f-50f524d9a905"}},{"name":"{{step[e28f0446-b0de-4608-8a22-704f7431f5d3].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2f48da72-6157-4686-adb3-8a2c1c08d3f2].root.authorizationSummary}}","label":"step➛Parse Response Body➛root➛authorizationSummary","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Mastercom - Transaction Search - COPY ME</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9fb2a169736e550a7c7b1511153afae</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Mastercom - Transaction Search - COPY ME</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_d9fb2a169736e550a7c7b1511153afae</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:22</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=d9fb2a169736e550a7c7b1511153afae"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d9fb2a169736e550a7c7b1511153afae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>d9fb2a169736e550a7c7b1511153afae</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>82fb6a169736e550a7c7b1511153af8b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:22</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD8afb6a16d236e550036e53dbe111e776":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD8afb6a16d236e550036e53dbe111e776.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"93e97cc8-8e48-4da4-858f-cfaa9f0fc91f\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8afb6a16d236e550036e53dbe111e776\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">82fb6a169736e550a7c7b1511153af84</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>d9fb2a169736e550a7c7b1511153afae</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>cefb6a169736e550a7c7b1511153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">cefb6a169736e550a7c7b1511153af78</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d9fb2a169736e550a7c7b1511153afae"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>authorizationsummary</field>
+        <id>d9fb2a169736e550a7c7b1511153afae</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>c6fb6a169736e550a7c7b1511153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</table>
+        <value>{{step[2f48da72-6157-4686-adb3-8a2c1c08d3f2].root.authorizationSummary}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>d9fb2a169736e550a7c7b1511153afae</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>4efb6a169736e550a7c7b1511153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>d9fb2a169736e550a7c7b1511153afae</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>8afb6a169736e550a7c7b1511153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN2dfb6a169736e550a7c7b1511153af16,3dfb6a169736e550a7c7b1511153af4f,79fb6a169736e550a7c7b1511153af1e,b1fb6a169736e550a7c7b1511153af25,f1fb6a169736e550a7c7b1511153af3b,f5fb6a169736e550a7c7b1511153af65"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action>
+        <cid>10edab5f-ce85-4345-a049-2825c481db41</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Payload Body step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Payload Builder">2429af02b3331300176b051a16a8dcab</step_type>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>2dfb6a169736e550a7c7b1511153af16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2dfb6a169736e550a7c7b1511153af16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2dfb6a169736e550a7c7b1511153af16</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>3dfb6a169736e550a7c7b1511153af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Name Value Pairs">89cb2b82b3331300176b051a16a8dc32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2dfb6a169736e550a7c7b1511153af16"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name_value</field>
+        <id>2dfb6a169736e550a7c7b1511153af16</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>b5fb6a169736e550a7c7b1511153af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_2429af02b3331300176b051a16a8dcab</table>
+        <value>{"type":"ADV_NV","value":[{"name":"acquirerRefNumber","value":"{{action.acquirerrefnumber}}","attributes":{}},{"name":"primaryAccountNum","value":"{{action.primaryaccountnum}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"transAmountFrom","value":"{{action.transamountfrom}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"transAmountTo","value":"{{action.transamountto}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"tranStartDate","value":"{{action.transtartdate}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"tranEndDate","value":"{{action.tranenddate}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2dfb6a169736e550a7c7b1511153af16"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2dfb6a169736e550a7c7b1511153af16"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2dfb6a169736e550a7c7b1511153af16"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_2dfb6a169736e550a7c7b1511153af16"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action>
+        <cid>e28f0446-b0de-4608-8a22-704f7431f5d3</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>5</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>3dfb6a169736e550a7c7b1511153af4f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3dfb6a169736e550a7c7b1511153af4f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>35fb6a169736e550a7c7b1511153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>https://sandbox.api.mastercard.com/mastercom</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>39fb6a169736e550a7c7b1511153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>/v6/transactions/search</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>71fb6a169736e550a7c7b1511153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>75fb6a169736e550a7c7b1511153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>7dfb6a169736e550a7c7b1511153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b1fb6a169736e550a7c7b1511153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b9fb6a169736e550a7c7b1511153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>bdfb6a169736e550a7c7b1511153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f5fb6a169736e550a7c7b1511153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f9fb6a169736e550a7c7b1511153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3dfb6a169736e550a7c7b1511153af4f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>fdfb6a169736e550a7c7b1511153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3dfb6a169736e550a7c7b1511153af4f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f5fb6a169736e550a7c7b1511153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>35fb6a169736e550a7c7b1511153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>fdfb6a169736e550a7c7b1511153af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[10edab5f-ce85-4345-a049-2825c481db41].payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>71fb6a169736e550a7c7b1511153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f9fb6a169736e550a7c7b1511153af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>7dfb6a169736e550a7c7b1511153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>bdfb6a169736e550a7c7b1511153af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Accept","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Authorization","value":"{{step[f452ceba-7346-4753-b577-060f27544f32].headers}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Content-Type","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>3dfb6a169736e550a7c7b1511153af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b1fb6a169736e550a7c7b1511153af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>75fb6a169736e550a7c7b1511153af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b9fb6a169736e550a7c7b1511153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>3dfb6a169736e550a7c7b1511153af4f</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>39fb6a169736e550a7c7b1511153af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3dfb6a169736e550a7c7b1511153af4f"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=3dfb6a169736e550a7c7b1511153af4f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3dfb6a169736e550a7c7b1511153af4f^sys_idNOT IN79fb6a169736e550a7c7b1511153af5b,bdfb6a169736e550a7c7b1511153af5b"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>headers</input_name>
+        <instance>3dfb6a169736e550a7c7b1511153af4f</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"name-values-1-value-input":{"scriptActive":false,"savedValue":""}}</script>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>79fb6a169736e550a7c7b1511153af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>body</input_name>
+        <instance>3dfb6a169736e550a7c7b1511153af4f</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"body":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn JSON.parse(fd_data._1__payload_body_step.payload)"}}</script>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>bdfb6a169736e550a7c7b1511153af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_3dfb6a169736e550a7c7b1511153af4f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action>
+        <cid>d02dc1c5-4a99-4310-a2ce-3952b1672a01</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Build Header</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Payload Builder">2429af02b3331300176b051a16a8dcab</step_type>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>79fb6a169736e550a7c7b1511153af1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=79fb6a169736e550a7c7b1511153af1e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79fb6a169736e550a7c7b1511153af1e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>3dfb6a169736e550a7c7b1511153af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Name Value Pairs">89cb2b82b3331300176b051a16a8dc32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=79fb6a169736e550a7c7b1511153af1e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name_value</field>
+        <id>79fb6a169736e550a7c7b1511153af1e</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>b9fb6a169736e550a7c7b1511153af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_2429af02b3331300176b051a16a8dcab</table>
+        <value>{"type":"ADV_NV","value":[{"name":"consumer_key","value":"{{action.consumer_key}}","attributes":{}},{"name":"signing_key","value":"{{action.signing_key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"keystore_password","value":"{{action.keystore_password}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"uri","value":"{{action.uri}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"http_verb","value":"{{action.http_verb}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"json_obj","value":"{{step[10edab5f-ce85-4345-a049-2825c481db41].payload}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=79fb6a169736e550a7c7b1511153af1e"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=79fb6a169736e550a7c7b1511153af1e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=79fb6a169736e550a7c7b1511153af1e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_79fb6a169736e550a7c7b1511153af1e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action>
+        <cid>1850e457-a6a7-4117-a432-d4b82e13b691</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Generate Headers</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>b1fb6a169736e550a7c7b1511153af25</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b1fb6a169736e550a7c7b1511153af25"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>31fb6a169736e550a7c7b1511153af37</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:21</sys_updated_on>
+        <value>http://34.228.19.61</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>35fb6a169736e550a7c7b1511153af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>39fb6a169736e550a7c7b1511153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>71fb6a169736e550a7c7b1511153af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>/generate_oauth_headers</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>79fb6a169736e550a7c7b1511153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>7dfb6a169736e550a7c7b1511153af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>eeab973fd7802200bdbaee5b5e610381</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b5fb6a169736e550a7c7b1511153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b9fb6a169736e550a7c7b1511153af36</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:21</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Use MID">e532afc12f101300a09a839fb18c95b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>bdfb6a169736e550a7c7b1511153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f1fb6a169736e550a7c7b1511153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f5fb6a169736e550a7c7b1511153af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b1fb6a169736e550a7c7b1511153af25</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f9fb6a169736e550a7c7b1511153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b1fb6a169736e550a7c7b1511153af25"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>31fb6a169736e550a7c7b1511153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>7dfb6a169736e550a7c7b1511153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>75fb6a169736e550a7c7b1511153af33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[d02dc1c5-4a99-4310-a2ce-3952b1672a01].payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b9fb6a169736e550a7c7b1511153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>71fb6a169736e550a7c7b1511153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b5fb6a169736e550a7c7b1511153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>35fb6a169736e550a7c7b1511153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>b1fb6a169736e550a7c7b1511153af33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>39fb6a169736e550a7c7b1511153af33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f9fb6a169736e550a7c7b1511153af33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f1fb6a169736e550a7c7b1511153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>bdfb6a169736e550a7c7b1511153af33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>use_mid</field>
+        <id>b1fb6a169736e550a7c7b1511153af25</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f5fb6a169736e550a7c7b1511153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b1fb6a169736e550a7c7b1511153af25"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b1fb6a169736e550a7c7b1511153af25"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b1fb6a169736e550a7c7b1511153af25^sys_idNOT IN31fb6a169736e550a7c7b1511153af31"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>body</input_name>
+        <instance>b1fb6a169736e550a7c7b1511153af25</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"body":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/"}}</script>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>31fb6a169736e550a7c7b1511153af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_b1fb6a169736e550a7c7b1511153af25"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action>
+        <cid>f452ceba-7346-4753-b577-060f27544f32</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parse Header Payload</label>
+        <order>4</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f1fb6a169736e550a7c7b1511153af3b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f1fb6a169736e550a7c7b1511153af3b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f1fb6a169736e550a7c7b1511153af3b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>31fb6a169736e550a7c7b1511153af4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  outputs['headers'] = JSON.parse(inputs['headers'])['Authorization']
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f1fb6a169736e550a7c7b1511153af3b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>7dfb6a169736e550a7c7b1511153af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f1fb6a169736e550a7c7b1511153af3b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>f1fb6a169736e550a7c7b1511153af3b</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f9fb6a169736e550a7c7b1511153af4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f1fb6a169736e550a7c7b1511153af3b</table>
+        <value>{{step[1850e457-a6a7-4117-a432-d4b82e13b691].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f1fb6a169736e550a7c7b1511153af3b^id=f1fb6a169736e550a7c7b1511153af3b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=f1fb6a169736e550a7c7b1511153af3b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f1fb6a169736e550a7c7b1511153af3b^sys_idNOT IN3dfb6a169736e550a7c7b1511153af3e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Header Payload">f1fb6a169736e550a7c7b1511153af3b</model>
+        <model_id>f1fb6a169736e550a7c7b1511153af3b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f1fb6a169736e550a7c7b1511153af3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>3dfb6a169736e550a7c7b1511153af3e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f1fb6a169736e550a7c7b1511153af3b^sys_idNOT IN7dfb6a169736e550a7c7b1511153af43"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0d6f5af5-6a98-402b-93ce-969cd5761355</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>headers</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Header Payload">f1fb6a169736e550a7c7b1511153af3b</model>
+        <model_id>f1fb6a169736e550a7c7b1511153af3b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f1fb6a169736e550a7c7b1511153af3b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>7dfb6a169736e550a7c7b1511153af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f1fb6a169736e550a7c7b1511153af3b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f1fb6a169736e550a7c7b1511153af3b^sys_idNOT IN79fb6a169736e550a7c7b1511153af47"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f1fb6a169736e550a7c7b1511153af3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>79fb6a169736e550a7c7b1511153af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>headers</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f1fb6a169736e550a7c7b1511153af3b_headers_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action>
+        <cid>2f48da72-6157-4686-adb3-8a2c1c08d3f2</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Parse Response Body</label>
+        <order>6</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>f5fb6a169736e550a7c7b1511153af65</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5fb6a169736e550a7c7b1511153af65"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5fb6a169736e550a7c7b1511153af65</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>0efb6a169736e550a7c7b1511153af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>{"authorizationSummaryCount":"1","message":"Search returned 1 records.","authorizationSummary":[{"originalMessageTypeIdentifier":"0110","banknetDate":"230117","transactionAmountUsd":"196.01","primaryAccountNumber":"5488888888887192","processingCode":"00","transactionAmountLocal":"000000019601","authorizationDateAndTime":"0117083446","track2":"Y101","authenticationId":"773875","cardAcceptorName":"Chick-Fil-A","cardAcceptorCity":"MIAMI","cardAcceptorState":"FL","track1":"N","currencyCode":"840","chipPresent":"N","transactionId":"VO+JKd-xiRja5rIiFB+0jMs38wQtzFmx1ow8SYDKs5MlVOzsGKQX6ohkcts_las9WFPrYXTxt3YZL-jZCXRyw==","clearingSummary":[{"primaryAccountNumber":"5488888888887192","transactionAmountLocal":"19601","dateAndTimeLocal":"230117083446","cardDataInputCapability":"D","cardholderAuthenticationCapability":"9","cardPresent":"0","acquirerReferenceNumber":"05436847276000293995738","cardAcceptorName":"Chick-Fil-A","currencyCode":"840","transactionId":"kL2FU0soAZefzlLfacUJEmcGF2Efz2HY-Z_RbjqrLbq9099-A_aGWnCqWaVJ3IVgdQ4+ttwVmF7WMpWlpxbxT==","installmentPaymentDataBrazil":"7873672919708416798951355269527850436122952907137646911","settlementIndicator":"M","messageReversalIndicator":"R"}]}]}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5fb6a169736e550a7c7b1511153af65</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>4afb6a169736e550a7c7b1511153af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"authorizationSummaryCount","children":[],"type":"string","jpath":"$.authorizationSummaryCount","previewValue":"1"},{"name":"message","children":[],"type":"string","jpath":"$.message","previewValue":"Search returned 1 records."},{"name":"authorizationSummary","children":[{"name":"authorizationSummary_object","children":[{"name":"originalMessageTypeIdentifier","children":[],"type":"string","jpath":"$.authorizationSummary[*].originalMessageTypeIdentifier","previewValue":"0110"},{"name":"banknetDate","children":[],"type":"string","jpath":"$.authorizationSummary[*].banknetDate","previewValue":"230117"},{"name":"transactionAmountUsd","children":[],"type":"string","jpath":"$.authorizationSummary[*].transactionAmountUsd","previewValue":"196.01"},{"name":"primaryAccountNumber","children":[],"type":"string","jpath":"$.authorizationSummary[*].primaryAccountNumber","previewValue":"5488888888887192"},{"name":"processingCode","children":[],"type":"string","jpath":"$.authorizationSummary[*].processingCode","previewValue":"00"},{"name":"transactionAmountLocal","children":[],"type":"string","jpath":"$.authorizationSummary[*].transactionAmountLocal","previewValue":"000000019601"},{"name":"authorizationDateAndTime","children":[],"type":"string","jpath":"$.authorizationSummary[*].authorizationDateAndTime","previewValue":"0117083446"},{"name":"track2","children":[],"type":"string","jpath":"$.authorizationSummary[*].track2","previewValue":"Y101"},{"name":"authenticationId","children":[],"type":"string","jpath":"$.authorizationSummary[*].authenticationId","previewValue":"773875"},{"name":"cardAcceptorName","children":[],"type":"string","jpath":"$.authorizationSummary[*].cardAcceptorName","previewValue":"Chick-Fil-A"},{"name":"cardAcceptorCity","children":[],"type":"string","jpath":"$.authorizationSummary[*].cardAcceptorCity","previewValue":"MIAMI"},{"name":"cardAcceptorState","children":[],"type":"string","jpath":"$.authorizationSummary[*].cardAcceptorState","previewValue":"FL"},{"name":"track1","children":[],"type":"string","jpath":"$.authorizationSummary[*].track1","previewValue":"N"},{"name":"currencyCode","children":[],"type":"string","jpath":"$.authorizationSummary[*].currencyCode","previewValue":"840"},{"name":"chipPresent","children":[],"type":"string","jpath":"$.authorizationSummary[*].chipPresent","previewValue":"N"},{"name":"transactionId","children":[],"type":"string","jpath":"$.authorizationSummary[*].transactionId","previewValue":"VO+JKd-xiRja5rIiFB+0jMs38wQtzFmx1ow8SYDKs5MlVOzsGKQX6ohkcts_las9WFPrYXTxt3YZL-jZCXRyw=="},{"name":"clearingSummary","children":[{"name":"clearingSummary_object","children":[{"name":"primaryAccountNumber","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].primaryAccountNumber","previewValue":"5488888888887192"},{"name":"transactionAmountLocal","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].transactionAmountLocal","previewValue":"19601"},{"name":"dateAndTimeLocal","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].dateAndTimeLocal","previewValue":"230117083446"},{"name":"cardDataInputCapability","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].cardDataInputCapability","previewValue":"D"},{"name":"cardholderAuthenticationCapability","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].cardholderAuthenticationCapability","previewValue":"9"},{"name":"cardPresent","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].cardPresent","previewValue":"0"},{"name":"acquirerReferenceNumber","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].acquirerReferenceNumber","previewValue":"05436847276000293995738"},{"name":"cardAcceptorName","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].cardAcceptorName","previewValue":"Chick-Fil-A"},{"name":"currencyCode","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].currencyCode","previewValue":"840"},{"name":"transactionId","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].transactionId","previewValue":"kL2FU0soAZefzlLfacUJEmcGF2Efz2HY-Z_RbjqrLbq9099-A_aGWnCqWaVJ3IVgdQ4+ttwVmF7WMpWlpxbxT=="},{"name":"installmentPaymentDataBrazil","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].installmentPaymentDataBrazil","previewValue":"7873672919708416798951355269527850436122952907137646911"},{"name":"settlementIndicator","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].settlementIndicator","previewValue":"M"},{"name":"messageReversalIndicator","children":[],"type":"string","jpath":"$.authorizationSummary[*].clearingSummary[*].messageReversalIndicator","previewValue":"R"}],"type":"object","jpath":"$.authorizationSummary[*].clearingSummary[*]","previewValue":""}],"type":"array.object","jpath":"$.authorizationSummary[*].clearingSummary[*]","previewValue":""}],"type":"object","jpath":"$.authorizationSummary[*]","previewValue":""}],"type":"array.object","jpath":"$.authorizationSummary[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f5fb6a169736e550a7c7b1511153af65^id=f5fb6a169736e550a7c7b1511153af65"/>
+    <sys_element_mapping action="delete_multiple" query="id=f5fb6a169736e550a7c7b1511153af65"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>f5fb6a169736e550a7c7b1511153af65</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>c6fb6a169736e550a7c7b1511153af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>f5fb6a169736e550a7c7b1511153af65</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>42fb6a169736e550a7c7b1511153af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[e28f0446-b0de-4608-8a22-704f7431f5d3].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>f5fb6a169736e550a7c7b1511153af65</id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>06fb6a169736e550a7c7b1511153af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f5fb6a169736e550a7c7b1511153af65"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f5fb6a169736e550a7c7b1511153af65^sys_idNOT IN71fb6a169736e550a7c7b1511153af6b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD35fb6a168136e550932642a78990b468,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=cf5e8ff4-8f7b-4c30-b20a-c0591989e0b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Response Body">f5fb6a169736e550a7c7b1511153af65</model>
+        <model_id>f5fb6a169736e550a7c7b1511153af65</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f5fb6a169736e550a7c7b1511153af65</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>71fb6a169736e550a7c7b1511153af6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f5fb6a169736e550a7c7b1511153af65"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f5fb6a169736e550a7c7b1511153af65^sys_idNOT IN39fb6a169736e550a7c7b1511153af6e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f5fb6a169736e550a7c7b1511153af65</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>39fb6a169736e550a7c7b1511153af6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>root</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f5fb6a169736e550a7c7b1511153af65_root_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN11fb2a169736e550a7c7b1511153afe0,15fb2a169736e550a7c7b1511153afb5,21fb2a169736e550a7c7b1511153afeb,21fb2a169736e550a7c7b1511153aff6,21fb6a169736e550a7c7b1511153af01,29fb2a169736e550a7c7b1511153afe5,29fb2a169736e550a7c7b1511153aff0,29fb2a169736e550a7c7b1511153affb,29fb6a169736e550a7c7b1511153af06,91fb2a169736e550a7c7b1511153afbc,99fb2a169736e550a7c7b1511153afc1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9781a36d-516a-433e-b1d6-f0397f60c2b5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>https://sandbox.api.mastercard.com/mastercom/v6/transactions/search</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>uri</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>URI</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>11fb2a169736e550a7c7b1511153afe0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=11fb2a169736e550a7c7b1511153afe0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1b29f94e-f4c1-4002-a4c5-1ce6b39a986a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>HR6VlNTxKOc-XZkkyl6WbNvBxIhK2Zk3iB4N9lwW2876d99c!f4dd8b344de84fa1a4fa773e45bc20670000000000000000</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>consumer_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Consumer Key</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>15fb2a169736e550a7c7b1511153afb5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=15fb2a169736e550a7c7b1511153afb5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b6a52cac-d568-4542-be2f-5849d90d21fb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>5488888888887192</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>primaryaccountnum</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>primaryAccountNum</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>21fb2a169736e550a7c7b1511153afeb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=21fb2a169736e550a7c7b1511153afeb"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=060a2b5b-cdef-42fe-8f0a-286b13421478</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>20050</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transamountto</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>transAmountTo</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>21fb2a169736e550a7c7b1511153aff6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=21fb2a169736e550a7c7b1511153aff6"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0c80f187-bf33-497d-8d15-ba6dbb12e814</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>2023-01-17</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tranenddate</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tranEndDate</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>21fb6a169736e550a7c7b1511153af01</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=21fb6a169736e550a7c7b1511153af01"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e95ad5f0-cc06-4a72-add6-9fef20a2bf23</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>05436847276000293995738</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>acquirerrefnumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>acquirerRefNumber</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>29fb2a169736e550a7c7b1511153afe5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=29fb2a169736e550a7c7b1511153afe5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1f1cb9a3-e99c-4751-b433-3e2fae62ebf4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>10000</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transamountfrom</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>transAmountFrom</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>29fb2a169736e550a7c7b1511153aff0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=29fb2a169736e550a7c7b1511153aff0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=41c7eb90-ce86-499a-9de5-f5d3a676fc56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>2023-01-17</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transtartdate</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tranStartDate</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>29fb2a169736e550a7c7b1511153affb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=29fb2a169736e550a7c7b1511153affb"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d143030a-3a91-4f1f-b8af-1ed8afebe1e2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>POST</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>http_verb</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>http_verb</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>29fb6a169736e550a7c7b1511153af06</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=29fb6a169736e550a7c7b1511153af06"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=cc925cbd-242b-4a95-896d-3343d2ac12b6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>./MasterCom-sandbox.p12</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>signing_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Signing Key</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>91fb2a169736e550a7c7b1511153afbc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=91fb2a169736e550a7c7b1511153afbc"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d8a8783f-6b2a-4d6a-9019-9ac4b096db03</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>keystorepassword</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>keystore_password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Keystore Password</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>99fb2a169736e550a7c7b1511153afc1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=99fb2a169736e550a7c7b1511153afc1"/>
+    <sys_hub_action_output action="delete_multiple" query="model=d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN0efb6a169736e550a7c7b1511153af7f,82fb6a169736e550a7c7b1511153af84,cefb6a169736e550a7c7b1511153af78"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=authorizationSummary_object,child_name=authorizationSummary_object,child_type=object,child_type_label=Object,child_uiUniqueId=65f786d6-846f-4e07-a821-24eabc3ceab7,co_type_name=FDc6fb6a163536e550b710f61620cf5074,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=2f48da72-6157-4686-adb3-8a2c1c08d3f2,sourceType=step,sourceUiUniqueId=cedb6fb4-3ea7-47c8-93d6-84c21b8591b2,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=93a03eb2-bb73-4fd6-8572-660b2673933d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>authorizationsummary</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>authorizationSummary</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>0efb6a169736e550a7c7b1511153af7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0efb6a169736e550a7c7b1511153af7f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0efb6a169736e550a7c7b1511153af7f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD8afb6a16d236e550036e53dbe111e776,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=93e97cc8-8e48-4da4-858f-cfaa9f0fc91f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>82fb6a169736e550a7c7b1511153af84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=82fb6a169736e550a7c7b1511153af84"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=82fb6a169736e550a7c7b1511153af84"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=7230fe7a-f4d6-4b04-9c2a-20c34c4ab4de,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</model>
+        <model_id>d9fb2a169736e550a7c7b1511153afae</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:42</sys_created_on>
+        <sys_id>cefb6a169736e550a7c7b1511153af78</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:16:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cefb6a169736e550a7c7b1511153af78"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cefb6a169736e550a7c7b1511153af78"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN0afb6a169736e550a7c7b1511153af8e,42fb6a169736e550a7c7b1511153af8e,8efb6a169736e550a7c7b1511153af8e,cafb6a169736e550a7c7b1511153af8e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d9fb2a169736e550a7c7b1511153afae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[10edab5f-ce85-4345-a049-2825c481db41].payload}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>0afb6a169736e550a7c7b1511153af8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6cfe0212-6e9f-48e2-a10a-5938ac2b327a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d9fb2a169736e550a7c7b1511153afae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[10edab5f-ce85-4345-a049-2825c481db41].payload}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>42fb6a169736e550a7c7b1511153af8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ce4189e5-87c2-4c18-967e-f6a69ae1e915</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d9fb2a169736e550a7c7b1511153afae</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>ce4189e5-87c2-4c18-967e-f6a69ae1e915</source_ui_id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>8efb6a169736e550a7c7b1511153af8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <transform_compositions>[{"id":"c98659e0c7c720105312134c95c26001","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"regex","label":"Regex","order":0,"attributes":{},"value":"(\"chargebackRefNum\":)\\s*\"\\[\\s*\\\\\"(\\d+)\\s*\\\\\"[^\"]*\"","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]},{"id":null,"name":"replace_string","label":"Replace String","order":1,"attributes":{},"value":"$1[ \"$2\" ]","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="replace_string">6f2599a0c7c720105312134c95c260fe</transform_definition_id>
+        <ui_id>42058eff-240f-4f41-9f26-3b287b19aed7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d9fb2a169736e550a7c7b1511153afae</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>6cfe0212-6e9f-48e2-a10a-5938ac2b327a</source_ui_id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>cafb6a169736e550a7c7b1511153af8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <transform_compositions>[{"id":"c98659e0c7c720105312134c95c26001","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"regex","label":"Regex","order":0,"attributes":{},"value":"(\"chargebackRefNum\":)\\s*\"\\[\\s*\\\\\"(\\d+)\\s*\\\\\"[^\"]*\"","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]},{"id":null,"name":"replace_string","label":"Replace String","order":1,"attributes":{},"value":"$1[ \"$2\" ]","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="replace_string">6f2599a0c7c720105312134c95c260fe</transform_definition_id>
+        <ui_id>7254ea93-5a37-4776-a40d-4b79fdc53b49</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN82fb6a169736e550a7c7b1511153af8f"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Mastercom - Transaction Search - COPY ME">d9fb2a169736e550a7c7b1511153afae</action_type_id>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>82fb6a169736e550a7c7b1511153af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=82fb6a169736e550a7c7b1511153af8f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN55fb2a169736e550a7c7b1511153afbb,5dfb2a169736e550a7c7b1511153afc0,d1fb2a169736e550a7c7b1511153afdf,e1fb2a169736e550a7c7b1511153afea,e1fb2a169736e550a7c7b1511153aff5,e1fb6a169736e550a7c7b1511153af00,e1fb6a169736e550a7c7b1511153af0b,e9fb2a169736e550a7c7b1511153afe4,e9fb2a169736e550a7c7b1511153afef,e9fb2a169736e550a7c7b1511153affa,e9fb6a169736e550a7c7b1511153af05"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>consumer_key</element>
+        <help/>
+        <hint/>
+        <label>Consumer Key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>55fb2a169736e550a7c7b1511153afbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Key</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_consumer_key_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>signing_key</element>
+        <help/>
+        <hint/>
+        <label>Signing Key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>5dfb2a169736e550a7c7b1511153afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Signing Key</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_signing_key_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>keystore_password</element>
+        <help/>
+        <hint/>
+        <label>Keystore Password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>d1fb2a169736e550a7c7b1511153afdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Keystore Password</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_keystore_password_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>acquirerrefnumber</element>
+        <help/>
+        <hint/>
+        <label>acquirerRefNumber</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>e1fb2a169736e550a7c7b1511153afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acquirerRefNumber</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_acquirerrefnumber_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transamountfrom</element>
+        <help/>
+        <hint/>
+        <label>transAmountFrom</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>e1fb2a169736e550a7c7b1511153aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>transAmountFrom</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_transamountfrom_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transtartdate</element>
+        <help/>
+        <hint/>
+        <label>tranStartDate</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>e1fb6a169736e550a7c7b1511153af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tranStartDate</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_transtartdate_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>http_verb</element>
+        <help/>
+        <hint/>
+        <label>http_verb</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>e1fb6a169736e550a7c7b1511153af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>http_verb</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_http_verb_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>uri</element>
+        <help/>
+        <hint/>
+        <label>URI</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:40</sys_created_on>
+        <sys_id>e9fb2a169736e550a7c7b1511153afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>URI</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_uri_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>primaryaccountnum</element>
+        <help/>
+        <hint/>
+        <label>primaryAccountNum</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>e9fb2a169736e550a7c7b1511153afef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>primaryAccountNum</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_primaryaccountnum_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transamountto</element>
+        <help/>
+        <hint/>
+        <label>transAmountTo</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>e9fb2a169736e550a7c7b1511153affa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>transAmountTo</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_transamountto_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tranenddate</element>
+        <help/>
+        <hint/>
+        <label>tranEndDate</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:41</sys_created_on>
+        <sys_id>e9fb6a169736e550a7c7b1511153af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tranEndDate</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae_tranenddate_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_d9fb2a169736e550a7c7b1511153afae"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae^sys_idNOT IN06fb6a169736e550a7c7b1511153af87,46fb6a169736e550a7c7b1511153af83,cefb6a169736e550a7c7b1511153af7e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>06fb6a169736e550a7c7b1511153af87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae___action_status___en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>authorizationsummary</element>
+        <help/>
+        <hint/>
+        <label>authorizationSummary</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>46fb6a169736e550a7c7b1511153af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>authorizationSummary</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae_authorizationsummary_en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Chris.Clancy</sys_created_by>
+        <sys_created_on>2023-05-16 17:15:43</sys_created_on>
+        <sys_id>cefb6a169736e550a7c7b1511153af7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="CC - MC - Transport App" source="x_snc_cc_mc_tran_0">06e97d1f871eedd03c9eddb73cbb35eb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CC - MC - Transport App">06e97d1f871eedd03c9eddb73cbb35eb</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>Chris.Clancy</sys_updated_by>
+        <sys_updated_on>2023-05-16 17:15:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_d9fb2a169736e550a7c7b1511153afae"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=d9fb2a169736e550a7c7b1511153afae"/>
+</record_update>
